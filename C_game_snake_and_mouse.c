@@ -1,5 +1,3 @@
-//The game was created by Serkan KAVAK with using Visual Studio 2017
-
 #include <stdio.h>
 #include <conio.h>
 #include <windows.h>
@@ -232,7 +230,6 @@ void draw()
 	}
 }
 
-// This is where the magic happens. You should update game related variables here (e.g., player's coordinates, hit points, damage ...)
 void logic()
 {
 	static int speed = 0;
@@ -255,7 +252,7 @@ void logic()
 	{
 		speed++;
 
-		if (speed % 4 == 0)  // Speed of snake. Hýgh numbers will slow the snake
+		if (speed % 4 == 0)  // Speed of snake. Higher numbers will slow the snake
 		{
 			varx = snake[0][0];
 			vary = snake[0][1];
